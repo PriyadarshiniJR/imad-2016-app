@@ -43,6 +43,7 @@ function createTemp(data){
 		<link href="/ui/style.css" rel="stylesheet" />
 	</head>
 	<body>
+	<div class='container'>
 		<div>
 			<h2>
 			${h2Content}
@@ -64,6 +65,7 @@ function createTemp(data){
 				${dateContent}
 			</p>
 		</div>
+	<div>
 	</body>
 	</html>`;
 	return htmlTemp;
