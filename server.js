@@ -5,20 +5,64 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articles = {
+    myone:{
+           title:'MyFirst Page',
+           content:'This is my first page.'
+    },
+    
+    mytwo:{
+           title:'MySecong Page',
+           content:'This is my second page.'
+    },
+    
+    mythree:{
+           title:'MyThird Page',
+           content:'This is my third page.'
+    }
+};
+
+function template(data){
+    var title=data.title;
+    var content=data.content;
+    var htmlTemplate=`<!DOCTYPE html>
+    <html>
+     <head>
+         <title>
+             ${title}
+         </title>
+         <meta name='viewport' content='width=device=width initial-scale=1'>
+         <link href="/ui/style.css" rel="stylesheet" />
+     </head>   
+     <body>
+         <div class='container'>
+            
+             <div>
+                 <a href='/'>HOME</a>
+             </div>
+             
+             <div>
+                 <hr>
+             </div>
+             
+             <div>
+                 <p>
+                     ${content}
+                </p>
+             </div>
+         </div>
+     </body>
+    </html>
+    `;
+    return htmlTemplate;
+}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/myone',function(req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'myone.html'));
-});
-
-app.get('/mytwo',function(req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'mytwo.html'));    
-});
-
-app.get('/mythree',function(req,res){
- res.sendFile(path.join(__dirname, 'ui', 'mythree.html'));
+app.get('/:pageName',function(req,res){
+  res.send(template(articles[pageName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
