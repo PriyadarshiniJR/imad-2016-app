@@ -62,6 +62,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:pageName',function(req,res){
+  var pagename = req.params.pageName;
   res.send(template(articles[pageName]));
 });
 
