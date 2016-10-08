@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: lightblue;
-    margin-top: 75px;
+    margin-top: 60px;
 }
 
 .center {
@@ -25,7 +25,6 @@ body {
     font-family: sans-serif;
     color: blue;
     margin: 0 auto;
-    padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
 }
