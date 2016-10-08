@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
+    background-color: lightblue;
     margin-top: 75px;
 }
 
@@ -28,5 +28,9 @@ body {
     padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.heading{
+    color:black;
 }
 
