@@ -26,7 +26,7 @@ var article = {
 		wishContent:'Sup',
 		dateContent:'Day after is Sunday'
 	}
-}
+};
 
 function createTemp(data){
 	var title =data.title;
@@ -78,6 +78,12 @@ app.get('/', function (req, res) {
 app.get('/:pageName',function(req,res){
 	var pageName=req.params.pageName;
 	res.send(createTemp(article[pageName]));
+});
+
+var counter=0;
+app.get('/counter',function(req,res){
+   counter=counter+1;
+   res.send(counter,toString());
 });
 
 app.get('/ui/style.css', function (req, res) {
