@@ -27,7 +27,7 @@ submit.onclick = function(){
     
     var nameArray = ['name1','name2','name3'];
     var list='';
-    for(var i=0;i<nameArray.length();i++){
+    for(var i=0;i<nameArray.length;i++){
         list+='<li>'+nameArray[i]+'</li>';
     }
     var ul = document.getElementById('nameList');
