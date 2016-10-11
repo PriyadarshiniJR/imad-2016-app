@@ -30,6 +30,6 @@ submit.onclick = function(){
     for(var i=0;i<nameArray.length();i++){
         list+='<li>'+name[i]+'</li>';
     }
-    var ul = docyment.getElementById('nameList');
+    var ul = document.getElementById('nameList');
     ul.innerHTML = list; 
 };
