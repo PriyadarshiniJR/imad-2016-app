@@ -29,8 +29,8 @@
 .title{
     text-align: center;
     font-size:3em;
-    position:relative;
     margin:20px;
+    margin-top:10px;
     color:black;
     animation-name: example;
     animation-duration: 3s;
