@@ -36,10 +36,6 @@ div{
     background-color:red;
     animation-name: example;
     animation-duration: 30s;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 30s;
-    -moz-animation-name: example;
-    -moz-animation-duration: 30s;
 }
 
 
