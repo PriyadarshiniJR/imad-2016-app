@@ -15,5 +15,5 @@ button.onclick=function(){
     };
     
     request.open('GET','http://priyadarshinijr.imad.hasura-app.io',true);
-    request.send('NULL');
+    request.send(null);
 };
