@@ -21,15 +21,21 @@ body {
 }
 
 @keyframes example {
-    from {background-color: orange;}
-    to {background-color: yellow;}
+    from {color: black;}
+    to {color: red;}
 }
 
 /* The element to apply the animation to */
 .header{
     margin:0;
     height:100px;
-    background-color:orange;
+    background-color:yellow;
+}
+
+.title{
+    text-align: center;
+    margin:10px;
+    color:black;
     animation-name: example;
     animation-duration: 5s;
     animation-iteration-count: infinite;
