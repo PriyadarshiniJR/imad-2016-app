@@ -20,7 +20,7 @@ button.onclick=function(){
 
 
 var nameInput = getElementById('name');
-var names = nameInput.value;
+var name = nameInput.value;
 
 var submit = getElementById('submit_btn');
 submit.onclick = function(){
