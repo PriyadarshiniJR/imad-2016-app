@@ -29,10 +29,10 @@
 .title{
     text-align: center;
     font-size:3em;
-    margin:10px;
+    margin:20px;
     color:black;
     animation-name: example;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
