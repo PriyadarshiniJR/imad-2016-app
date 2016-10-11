@@ -20,16 +20,15 @@ body {
     height: 200px;
 }
 
-.container{
-    max-width: 800px;
-    font-family: sans-serif;
-    color: darkgreen;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
 }
 
-.heading{
-    color:black;
+.header{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
-
