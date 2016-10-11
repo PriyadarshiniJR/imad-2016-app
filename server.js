@@ -98,6 +98,7 @@ app.get('/ui/Priya.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Priya.jpg'));
 });
 
+var names=[];
 app.get('/submit-name/:name',function(req,res){
     var name=req.params.name;
     names.push(name);
