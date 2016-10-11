@@ -26,7 +26,6 @@
 
 /* The element to apply the animation to */
 .header{
-    margin:0;
     height:100px;
     background-color:yellow;
 }
@@ -34,7 +33,6 @@
 .title{
     text-align: center;
     font-size:3em;
-    margin:20px;
     color:black;
     animation-name: example;
     animation-duration: 3s;
