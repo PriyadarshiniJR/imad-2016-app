@@ -20,15 +20,15 @@ button.onclick=function(){
 
 
 var nameInput = getElementById('name');
-var name = nameInput.value;
+var names = nameInput.value;
 
 var submit = getElementById('submit_btn');
 submit.onclick = function(){
     
     var nameArray = ['name1','name2','name3'];
-    var list;
+    var list='';
     for(var i=0;i<nameArray.length();i++){
-        list+='<li>'+name[i]+'</li>';
+        list+='<li>'+nameArray[i]+'</li>';
     }
     var ul = document.getElementById('nameList');
     ul.innerHTML = list; 
