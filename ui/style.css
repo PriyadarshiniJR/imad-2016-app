@@ -30,6 +30,8 @@ div {
     width: 100px;
     height: 100px;
     background-color: red;
-    animation-name: example;
-    animation-duration: 4s;
+    -webkit-animation-name: example;
+    -moz-animation-name:example;
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration:20s;
 }
