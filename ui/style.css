@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: lightyellow;
+    margin:0;
 }
 
 .center {
@@ -27,7 +28,7 @@ body {
 /* The element to apply the animation to */
 .header{
     margin-top:0;
-    height:150px;
+    height:100px;
     background-color:orange;
     animation-name: example;
     animation-duration: 5s;
