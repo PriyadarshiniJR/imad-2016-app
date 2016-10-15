@@ -4,7 +4,7 @@
     background-color:skyblue;
 }
 
-.center {
+.center{
     text-align: center;
 }
 
@@ -12,7 +12,7 @@
     font-size: 300%;
 }
 
-.bold {
+.bold + div{
     font-weight: bold;
 }
 
