@@ -12,7 +12,7 @@
     font-size: 300%;
 }
 
-.bold + div{
+.bold{
     font-weight: bold;
 }
 
