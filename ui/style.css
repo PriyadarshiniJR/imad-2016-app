@@ -1,45 +1,7 @@
-.body{
-    position:absolute;
-    margin:10px;
-    background-color:skyblue;
+body {
+    background: url('/ui/bridge.jpeg') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
-.center{
-    text-align: center;
-}
-
-.text-big {
-    font-size: 300%;
-}
-
-.bold{
-    font-weight: bold;
-}
-
-.img-medium {
-    height: 200px;
-}
-
-@keyframes example {
-    from {color: black;}
-    to {color: red;}
-}
-
-/* The element to apply the animation to */
-.header{
-    position:relative;
-    height:100px;
-    background-color:yellow;
-}
-
-.title{
-    text-align: center;
-    position:relative;
-    font-size:3em;
-    color:black;
-    animation-name: example;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
