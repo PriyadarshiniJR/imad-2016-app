@@ -36,9 +36,8 @@ body {
 }
 
 .details{
-    position:relative;
-    top:500px;
-    left:500px;
+    position: relative; 
+    left: 500px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 15px;
