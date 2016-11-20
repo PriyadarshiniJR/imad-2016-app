@@ -13,7 +13,7 @@ body {
 	width: 100%;
 	font-family: 'Ceviche One', cursive;
 	color: #ffbf03;
-	font-size: 6em;
+	font-size: 4em;
 	text-shadow: 3px 3px #427d19;
 	text-align: left;
 	vertical-align: top;
@@ -22,8 +22,8 @@ body {
 }
 
 .img{
-    height:400px;
-    width:400px;
+    height:200px;
+    width:200px;
     top:200px;
     left:500px;
 }
