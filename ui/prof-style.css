@@ -24,6 +24,10 @@ body {
     background-color: black;
 }
 
+.out{
+    position:relative;
+}
+
 .img{
     position:relative;
     height:200px;
