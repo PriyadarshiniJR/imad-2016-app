@@ -22,6 +22,7 @@ body {
 }
 
 .img{
+    position:absolute;
     height:200px;
     width:200px;
     top:200px;
@@ -29,6 +30,7 @@ body {
 }
 
 .details{
+    position:absolute;
     top:700px;
     left:500px;
     font-family: 'Quicksand', sans-serif;
