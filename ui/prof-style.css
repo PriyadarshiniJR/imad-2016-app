@@ -34,8 +34,8 @@ body {
     top: 50px;
 }
 
-.details{
-    position:absolute;
+#details{
+    position:relative;
     top:700px;
     left:500px;
     font-family: 'Quicksand', sans-serif;
