@@ -25,11 +25,9 @@ body {
 }
 
 .out{
-    position:relative;
-    height:200px;
-    width:200px;
-    top:200px;
-    left:500px;
+    position: relative;
+    height: 200px;
+    width: 100%;
 }
 
 .img{
