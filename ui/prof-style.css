@@ -4,6 +4,34 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: 0px;
+    margin: 0;
     overflow: hidden;
+}
+
+.navbar{
+    position: relative;
+	width: 100%;
+	font-family: 'Ceviche One', cursive;
+	color: #ffbf03;
+	font-size: 6em;
+	text-shadow: 3px 3px #427d19;
+	text-align: left;
+	vertical-align: top;
+	background-color: black;
+	padding-left: 200px;
+}
+
+.img{
+    height:400px;
+    width:400px;
+    top:200px;
+    left:500px;
+}
+
+.details{
+    top:700px;
+    left:500px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
 }
