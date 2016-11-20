@@ -8,21 +8,24 @@ body {
     overflow: hidden;
 }
 
+.container{
+    position:relative;
+}
+
 .navbar{
     position: relative;
-	width: 100%;
-	font-family: 'Ceviche One', cursive;
-	color: #ffbf03;
-	font-size: 4em;
-	text-shadow: 3px 3px #427d19;
-	text-align: left;
-	vertical-align: top;
-	background-color: black;
-	padding-left: 200px;
+    width: 100%;
+    font-family: 'Ceviche One', cursive;
+    color: #ffbf03;
+    font-size: 4em;
+    text-shadow: 3px 3px #427d19;
+    text-align: center;
+    vertical-align: top;
+    background-color: black;
 }
 
 .img{
-    position:absolute;
+    position:relative;
     height:200px;
     width:200px;
     top:200px;
