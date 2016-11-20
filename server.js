@@ -29,7 +29,7 @@ app.get('/ui/Priya.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Priya.jpg'));
 });
 
-app.get('profile.html', function (req, res) {
+app.get('/profile', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
 });
 
