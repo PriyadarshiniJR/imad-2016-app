@@ -36,6 +36,7 @@ body {
 }
 
 .details{
+    margin:30px;
     left: 500px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
