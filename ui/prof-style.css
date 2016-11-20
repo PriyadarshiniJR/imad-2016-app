@@ -24,12 +24,6 @@ body {
     background-color: black;
 }
 
-.out{
-    position: relative;
-    height: 200px;
-    width: 100%;
-}
-
 .img{
     position:relative;
     height:200px;
