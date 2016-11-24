@@ -20,11 +20,11 @@ body {
 
 .date{
     font-family: 'Delius Unicase', cursive;
-    font-size:3em;
+    font-size:2em;
 }
 
 .content{
     font-family: 'Lobster', cursive;
-    font-size:3em;
+    font-size:2em;
     text-align:justify;
 }
