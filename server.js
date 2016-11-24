@@ -34,6 +34,9 @@ var htmlTemplate = `
               ${title}
           </title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          	<link rel="icon" type="image/png" href="/ui/favicon.ico">
+        	<link rel="manifest" href="/ui/favicon/manifest.json">
+        	<meta name="theme-color" content="#ffffff">
           <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
           <link href="/ui/article.css" rel="stylesheet" />
