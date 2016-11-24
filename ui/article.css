@@ -14,4 +14,17 @@ body {
 
 .heading{
     text-align:center;
+    font-family: 'Delius Unicase', cursive;
+    font-size:5em;
+}
+
+.date{
+    font-family: 'Delius Unicase', cursive;
+    font-size:3em;
+}
+
+.content{
+    font-family: 'Lobster', cursive;
+    font-size:3em;
+    text-align:justify;
 }
