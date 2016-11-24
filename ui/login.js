@@ -1,4 +1,4 @@
-var submit = document.getElementById('loginbtn');
+var submit = document.getElementById('sigin');
 console.log(submit);
     submit.onclick = function () {
         // Create a request object
