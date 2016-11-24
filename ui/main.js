@@ -15,21 +15,7 @@ function loadLogin () {
     request.send(null);
 }
 
-
-function loadLoginForm () {
-    /*var loginHtml = `
-        <h3>Login/Register to unlock awesome features</h3>
-        <input type="text" id="username" placeholder="username" />
-        <input type="password" id="password" />
-        <br/><br/>
-        <input type="submit" id="login_btn" value="Login" />
-        <input type="submit" id="register_btn" value="Register" />
-        `;
-        
-    document.getElementById('login_area').innerHTML = loginHtml;
-    */
-    // Submit username/password to login
-    var submit = document.getElementById('signin');
+ var submit = document.getElementById('signin');
     submit.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
@@ -53,6 +39,21 @@ function loadLoginForm () {
           }  
           // Not done yet
         };
+
+function loadLoginForm () {
+    /*var loginHtml = `
+        <h3>Login/Register to unlock awesome features</h3>
+        <input type="text" id="username" placeholder="username" />
+        <input type="password" id="password" />
+        <br/><br/>
+        <input type="submit" id="login_btn" value="Login" />
+        <input type="submit" id="register_btn" value="Register" />
+        `;
+        
+    document.getElementById('login_area').innerHTML = loginHtml;
+    */
+    // Submit username/password to login
+   
         
         // Make the request
         var username = document.getElementById('user-old').value;
