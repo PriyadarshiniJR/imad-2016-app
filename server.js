@@ -34,6 +34,8 @@ var htmlTemplate = `
               ${title}
           </title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
           <link href="/ui/article.css" rel="stylesheet" />
           <script type="text/javascript" src="/ui/article.js"></script>
       </head> 
@@ -52,7 +54,7 @@ var htmlTemplate = `
               <div class="content">
                 ${content}
               </div>
-              <hr/>
+              <br/>
               <h4>Comments</h4>
               <div id="comment_form">
               </div>
