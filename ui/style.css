@@ -41,7 +41,7 @@ body {
 }
 
 /*Username and Password*/
-#user-old,#pass-old,#user-new,#pass-new,#pass-con-new{
+#user-old,#pass-old,#user-new,#pass-new,#email{
 	width: 300px;
 	background-color: white;
 	border-color: #bdc7d8;
@@ -76,7 +76,7 @@ body {
     right: 200px;
 }
 
-#pass-con-new{
+#email{
     top: 400px;
     right: 200px;
 }
