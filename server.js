@@ -42,14 +42,14 @@ var htmlTemplate = `
               <div>
                   <a href="/">Home</a>
               </div>
-              <hr/>
-              <h3>
+              <br>
+              <div class="heading">
                   ${heading}
-              </h3>
-              <div>
+              </div>
+              <div class="date">
                   ${date.toDateString()}
               </div>
-              <div>
+              <div class="content">
                 ${content}
               </div>
               <hr/>
@@ -57,7 +57,6 @@ var htmlTemplate = `
               <div id="comment_form">
               </div>
               <div id="comments">
-                <center>Loading comments...</center>
               </div>
           </div>
       </body>
