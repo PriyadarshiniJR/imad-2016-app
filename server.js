@@ -88,6 +88,10 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
+app.get('/ui/login.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.js'));
+});
+
 //BG for LoginPage
 app.get('/ui/bridge.jpeg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bridge.jpeg'));
