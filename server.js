@@ -123,6 +123,40 @@ app.post('/create-user', function (req, res) {
    });
 });
 
+app.post('/signin', function (req, res) {
+   var username = req.body.username;
+   var password = req.body.password;
+   
+   pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          if (result.rows.length === 0) {
+              res.status(403).send('Username/Password is invalid');
+          } else {
+              // Match the password
+              var dbString = result.rows[0].password;
+              console.log(dbString);
+              var salt = dbString.split('$')[2];
+              var hashedPassword = hash(password, salt); 
+              // Creating a hash based on the password submitted and the original salt
+              if (hashedPassword === dbString) {
+                // Set the session
+                req.session.auth = {userId: result.rows[0].id};
+                // set cookie with a session id
+                // internally, on the server side, it maps the session id to an object
+                // { auth: {userId }}
+                
+                res.send('Credentials correct!');
+                
+              } else {
+                res.status(403).send('Username/Password is invalid');
+              }
+          }
+      }
+   });
+});
+
 
 app.get('/check-login', function (req, res) {
    if (req.session && req.session.auth && req.session.auth.userId) {
