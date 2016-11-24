@@ -72,42 +72,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-/*
-//Favicon
-app.get('/ui/favicon.ico', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'favicon.ico'));
-});
-
-//CSS for LoginPage
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
-
-app.get('/ui/article.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article.css'));
-});
-
-//JS
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
-
-app.get('/ui/login.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'login.js'));
-});
-
-//BG for LoginPage
-app.get('/ui/bridge.jpeg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'bridge.jpeg'));
-});
-
-
-//ProfilePic
-app.get('/ui/Priya.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Priya.jpg'));
-});
-*/
-
 app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
@@ -220,18 +184,6 @@ app.get('/articles/:articleName', function (req, res) {
 app.get('/profile', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
 });
-
-/*
-//CSS for ProfilePage
-app.get('/ui/prof-style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'prof-style.css'));
-});
-
-//BG for ProfilePage
-app.get('/ui/prof-pic.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'prof-pic.jpg'));
-});
-*/
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
