@@ -45,14 +45,16 @@ var htmlTemplate = `
                   <a href="/">Home</a>
               </div>
               <br>
-              <div class="heading">
-                  ${heading}
-              </div>
-              <div class="date">
-                  ${date.toDateString()}
-              </div>
-              <div class="content">
-                ${content}
+              <div class="wrap">
+                  <div class="heading">
+                      ${heading}
+                  </div>
+                  <div class="date">
+                      ${date.toDateString()}
+                  </div>
+                  <div class="content">
+                    ${content}
+                  </div>
               </div>
               <br/>
               <h4>Comments</h4>
