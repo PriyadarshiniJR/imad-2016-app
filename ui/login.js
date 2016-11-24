@@ -1,4 +1,5 @@
 var submit = document.getElementById('signin');
+console.log(submit);
     submit.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
