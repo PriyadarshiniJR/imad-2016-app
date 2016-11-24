@@ -24,11 +24,13 @@ body {
     text-align:center;
     font-family: 'Delius Unicase', cursive;
     font-size:5em;
+    opacity:1;
 }
 
 .date{
     font-family: 'Delius Unicase', cursive;
     font-size:2em;
+    opacity:1;
 }
 
 .content{
@@ -36,4 +38,5 @@ body {
     font-family: 'Lobster', cursive;
     font-size:2em;
     text-align:justify;
+    opacity:1;
 }
