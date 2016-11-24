@@ -11,3 +11,7 @@ body {
 .container{
 	position: relative;
 }
+
+.heading{
+    text-align:center;
+}
