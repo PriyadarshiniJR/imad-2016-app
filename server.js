@@ -69,7 +69,7 @@ var htmlTemplate = `
 
 //Index
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 //Favicon
