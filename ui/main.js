@@ -65,7 +65,7 @@ function loadLoginForm () {
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password})); 
         
-    };
+    }
     
     var register = document.getElementById('signup');
     register.onclick = function () {
