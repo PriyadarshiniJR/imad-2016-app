@@ -16,6 +16,7 @@ body {
     margin:10px;
     box-sizing:border-box;
     background-color: grey;
+    opacity:0.4;
     border:2px;
 }
 
