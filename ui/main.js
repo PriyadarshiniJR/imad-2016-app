@@ -29,7 +29,7 @@ function loadLoginForm () {
     document.getElementById('login_area').innerHTML = loginHtml;
     */
     // Submit username/password to login
-   var submit = document.getElementById('signin');
+   /*var submit = document.getElementById('signin');
     submit.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
@@ -64,7 +64,7 @@ function loadLoginForm () {
         request.send(JSON.stringify({username: username, password: password})); 
         
     };
-    
+    */
     var register = document.getElementById('signup');
     register.onclick = function () {
         // Create a request object
