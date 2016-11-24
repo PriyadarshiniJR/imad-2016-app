@@ -12,6 +12,10 @@ body {
 	position: relative;
 }
 
+.wrap{
+    margin:10px;
+}
+
 .heading{
     text-align:center;
     font-family: 'Delius Unicase', cursive;
@@ -24,6 +28,7 @@ body {
 }
 
 .content{
+    padding:10px;
     font-family: 'Lobster', cursive;
     font-size:2em;
     text-align:justify;
