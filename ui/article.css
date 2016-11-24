@@ -18,6 +18,7 @@ body {
     background-color: grey;
     opacity:0.7;
     border:2px;
+    border-radius:4px;
 }
 
 .heading{
