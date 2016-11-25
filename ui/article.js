@@ -143,6 +143,7 @@ function loadContent () {
                 }
                 content += "</ul>";
                 articles.innerHTML = content;
+                console.log(content);
             } else {
                 articles.innerHTML('Oops! Could not load all articles!');
             }
