@@ -55,13 +55,13 @@ body {
 
 /*Already User*/
 #user-old{
-    top: 50px;
+    top: 200px;
     right: 600px;
     width: 200px;
 }
 
 #pass-old{
-    top: 50px;
+    top: 200px;
     right: 350px;
     width: 200px;
 }
@@ -99,7 +99,7 @@ body {
 }
 
 #signin{
-	top: 50px;
+	top: 200px;
     right: 200px;
 }
 
