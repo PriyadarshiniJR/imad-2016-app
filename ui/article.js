@@ -1,5 +1,7 @@
 var currentArticleTitle = window.location.pathname.split('/')[2];
 
+loadContent();
+
 function loadCommentForm () {
     var commentFormHtml = `
         <h5>Submit a comment</h5>
@@ -58,6 +60,8 @@ function loadLogin () {
     request.send(null);
 }
 
+
+
 function escapeHTML (text)
 {
     var $text = document.createTextNode(text);
@@ -74,7 +78,7 @@ function loadComments () {
             var comments = document.getElementById('comments');
             if (request.status === 200) {
                 var content = '';
-                var commentsData = JSON.parse(this.responseText);
+                var commentsData = JSON.parse(request.responseText);
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
                     content += `<div class="comment">
@@ -95,6 +99,8 @@ function loadComments () {
     request.send(null);
 }
 
+loadComments();
+loadLogin();
 
 function loadArticles () {
         // Check if the user is already logged in
@@ -104,7 +110,7 @@ function loadArticles () {
             var articles = document.getElementById('articles');
             if (request.status === 200) {
                 var content = '<ul>';
-                var articleData = JSON.parse(this.responseText);
+                var articleData = JSON.parse(request.responseText);
                 for (var i=0; i< articleData.length; i++) {
                     content += `<li>
                     <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
@@ -131,7 +137,7 @@ function loadContent () {
             var articles = document.getElementById('articles');
             if (request.status === 200) {
                 var content = '<ul>';
-                var articleData = JSON.parse(this.responseText);
+                var articleData = JSON.parse(request.responseText);
                 for (var i=0; i< articleData.length; i++) {
                     content += `<li>
                     <div class="wrap">
@@ -155,8 +161,5 @@ function loadContent () {
 }
 
 // The first thing to do is to check if the user is logged in!
-loadLogin();
-loadComments();
-loadArticles();
-loadContent();
+
 
