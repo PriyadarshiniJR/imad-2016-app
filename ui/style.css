@@ -39,7 +39,6 @@ body {
 
 /*Username and Password*/
 #user-old,#pass-old,#user-new,#pass-new,#email{
-    width: 300px;
     background-color: white;
     border-color: #bdc7d8;
     position: relative;
@@ -50,32 +49,13 @@ body {
     width: 200px;
 }
 
-
 #user-old{
-    width: 200px;
+    float:right;
 }
 
-#pass-old{
-    width: 200px;
+#user-new,#pass-new,#email{
+    float:left;
 }
-
-New User
-#user-new{
-    top: 300px;
-    right: 200px;
-}
-
-#pass-new{
-    top: 350px;
-    right: 200px;
-}
-
-#email{
-    top: 400px;
-    right: 200px;
-}
-
-
 
 /*Signin and Signup*/
 #signin,#signup{
