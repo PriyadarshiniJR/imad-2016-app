@@ -114,7 +114,10 @@ function loggedinUser()
                 var user=request.responseText;
                 //alert(user);
                 console.log(user);
-              usertxt.innerHTML='Logged in as '+user;
+              usertxt.innerHTML=`<a href="/logout">
+                		<span class="glyphicon glyphicon-log-out"></span><br class="hidden-xs">Log Out</a>
+              
+              Logged in as `+user;
             }
              
             else
