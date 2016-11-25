@@ -59,7 +59,7 @@ body {
     width: 200px;
 }
 
-/*Already User
+
 #user-old{
     top: 50px;
     right: 600px;
@@ -72,7 +72,7 @@ body {
     width: 200px;
 }
 
-/*New User
+New User
 #user-new{
     top: 300px;
     right: 200px;
@@ -88,7 +88,7 @@ body {
     right: 200px;
 }
 
-/*******************************************************/
+
 
 /*Signin and Signup*/
 #signin,#signup{
@@ -104,7 +104,7 @@ body {
     font-size: 15px;
 }
 
-/*#signin{
+#signin{
     top: 50px;
     right: 200px;
 }
@@ -114,7 +114,7 @@ body {
     right: 200px;
 }
 
-/*******************************************************/
+
 
 
 
