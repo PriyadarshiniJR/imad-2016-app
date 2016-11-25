@@ -27,12 +27,13 @@ body {
     text-align: left;
     vertical-align: top;
     background-color: black;
-    padding-left: 200px;
+    padding-left: 20px;
 }
 
 .nav-above{
     color:white;
     font-size:2em;
+    text-align: right;
 }
 
 /*******************************************************/
