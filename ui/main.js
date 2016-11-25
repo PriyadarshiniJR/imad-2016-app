@@ -129,8 +129,10 @@ loadLogin();
             		<li>
               			<a href="#">
                 		<span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Contact</a>
-            		</li>`;
-            
+            		</li>
+            		<li><a href="/logout">Logout</a></li>
+            		`;
+                    
             }
              
             else
