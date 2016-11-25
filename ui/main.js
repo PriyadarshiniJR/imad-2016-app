@@ -96,10 +96,10 @@ loadLogin();
 
 // Now this is something that we could have directly done on the server-side using templating too!
 
- function loggedinUser()
+function loggedinUser()
 {
     
-    var usertxt=document.getElementById('nav-list');
+    var usertxt=document.getElementById('logged');
     console.log(usertxt);
    
      var request=new XMLHttpRequest();
@@ -114,43 +114,12 @@ loadLogin();
                 var user=request.responseText;
                 //alert(user);
                 console.log(user);
-              usertxt.innerHTML=` 	
-              <li>Logged in as ${user}</li>
-              <li id="navProfileButton">
-              			<a href="/profile">
-                		<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Profile</a>
-            		</li>
-            
-            		<li>
-              			<a href="/ui/articles.html">
-                		<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span><br class="hidden-xs">Articles</a>
-            		</li>
-            
-            		<li>
-              			<a href="#">
-                		<span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Contact</a>
-            		</li>
-            		<li><a href="/logout">Logout</a></li>
-            		`;
-                    
+              usertxt.innerHTML='Logged in as ${user}';
             }
              
             else
             {
-                usertxt.innerHTML=`	<li id="navProfileButton">
-              			<a href="/profile">
-                		<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Profile</a>
-            		</li>
-            
-            		<li>
-              			<a href="/ui/articles.html">
-                		<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span><br class="hidden-xs">Articles</a>
-            		</li>
-            
-            		<li>
-              			<a href="#">
-                		<span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Contact</a>
-            		</li>`;
+                usertxt.innerHTML='';
             }
               
             
