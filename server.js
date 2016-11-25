@@ -34,9 +34,9 @@ var htmlTemplate = `
               ${title}
           </title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          	<link rel="icon" type="image/png" href="/ui/favicon.ico">
-        	<link rel="manifest" href="/ui/favicon/manifest.json">
-        	<meta name="theme-color" content="#ffffff">
+            <link rel="icon" type="image/png" href="/ui/favicon.ico">
+          <link rel="manifest" href="/ui/favicon/manifest.json">
+          <meta name="theme-color" content="#ffffff">
           <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
           <link href="/ui/article.css" rel="stylesheet" />
@@ -234,18 +234,9 @@ app.get('/profile', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
 });
 
-app.get('/ui/bootstrap.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'boostrap.css'));
-});
-
 app.get('/ui/bootstrap.min.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'bootstrap.js'));
+  res.sendFile(path.join(__dirname, 'ui', 'bootstrap.min.js'));
 });
-
-app.get('/ui/jquery-3.1.1.min.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'jquery-3.1.1.min.js'));
-});
-
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
