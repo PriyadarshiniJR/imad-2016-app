@@ -43,7 +43,7 @@ body {
 
 /*Username and Password*/
 
-#user-old,#pass-old,#user-new,#pass-new,#email{
+#user-new,#pass-new,#email{
 	width: 300px;
 	background-color: white;
 	border-color: #bdc7d8;
@@ -86,7 +86,7 @@ body {
 /*******************************************************/
 
 /*Signin and Signup*/
-#signin,#signup{
+#signup{
 	width: 100px;
 	background-color:#7CFC00;
 	border-color:#4da951;
@@ -97,6 +97,8 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 15px;
+	top: 450px;
+    right: 200px;
 }
 
 /*#signin{
@@ -104,10 +106,6 @@ body {
     right: 200px;
 }*/
 
-#signup{
-	top: 450px;
-    right: 200px;
-}
 
 /*******************************************************/
 
