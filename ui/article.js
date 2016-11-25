@@ -95,6 +95,7 @@ function loadComments () {
     request.send(null);
 }
 
+var articles=document.getElementById("articles");
 function loadArticles () {
         // Check if the user is already logged in
     var request = new XMLHttpRequest();
@@ -121,7 +122,40 @@ function loadArticles () {
     request.send(null);
 }
 
+function loadContent () {
+        // Check if the user is already logged in
+    var articles=document.getElementById("articles");
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            var articles = document.getElementById('articles');
+            if (request.status === 200) {
+                var content = '<ul>';
+                var articleData = JSON.parse(this.responseText);
+                for (var i=0; i< articleData.length; i++) {
+                    content += `<li>
+                    <div class="wrap">
+                    <h3>${articleData[i].heading}</h3>
+                    <h5>${articleData[i].date.split('T')[0]}<h5>
+                    <div class="content">${articleData[i].content}</div>
+                    </li>
+                    </div>`;
+                }
+                content += "</ul>"
+                articles.innerHTML = content;
+            } else {
+                articles.innerHTML('Oops! Could not load all articles!')
+            }
+        }
+    };
+    
+    request.open('GET', '/get-articles', true);
+    request.send(null);
+}
+
 // The first thing to do is to check if the user is logged in!
 loadLogin();
 loadComments();
 loadArticles();
+loadContent();
+
