@@ -96,3 +96,71 @@ loadLogin();
 
 // Now this is something that we could have directly done on the server-side using templating too!
 
+ function loggedinUser()
+{
+    
+    var usertxt=document.getElementById('nav-list');
+    
+   
+     var request=new XMLHttpRequest();
+    request.onreadystatechange=function()
+    {
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            if(request.status===200)
+            {
+                
+               
+                var user=request.responseText;
+                //alert(user);
+                console.log(user);
+              usertxt.innerHTML=` 	
+              <li>Logged in as ${user}</li>
+              <li id="navProfileButton">
+              			<a href="/profile">
+                		<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Profile</a>
+            		</li>
+            
+            		<li>
+              			<a href="/ui/articles.html">
+                		<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span><br class="hidden-xs">Articles</a>
+            		</li>
+            
+            		<li>
+              			<a href="#">
+                		<span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Contact</a>
+            		</li>`;
+            
+            }
+             
+            else
+            {
+                usertxt.innerHTML=`	<li id="navProfileButton">
+              			<a href="/profile">
+                		<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Profile</a>
+            		</li>
+            
+            		<li>
+              			<a href="/ui/articles.html">
+                		<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span><br class="hidden-xs">Articles</a>
+            		</li>
+            
+            		<li>
+              			<a href="#">
+                		<span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Contact</a>
+            		</li>`;
+            }
+              
+            
+        }
+        
+    };
+request.open('GET','http://varunotelli.imad.hasura-app.io/check-login');
+request.send(null);
+  
+   
+    
+}
+
+
+loggedinUser();
