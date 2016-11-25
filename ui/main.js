@@ -33,6 +33,8 @@ function loadLoginForm () {
                   window.location.href='http://priyadarshinijr.imad.hasura-app.io/ui/profile.html';
               } else if (request.status === 403) {
                   submit.value = 'Invalid credentials. Try again?';
+                  alert('Invalid username/password');
+                  window.location.href='http://priyadarshinijr.imad.hasura-app.io';
               } else if (request.status === 500) {
                   alert('Something went wrong on the server');
                   submit.value = 'Login';
