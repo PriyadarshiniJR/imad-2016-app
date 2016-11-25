@@ -17,7 +17,7 @@ body {
 
 /*Navbar*/
 
-.nav-below,.nav-above{
+.nav-below{
     position: relative;
     width: 100%;
     font-family: 'Ceviche One', cursive;
@@ -32,6 +32,8 @@ body {
 
 .nav-above{
     color:white;
+    position: relative;
+    width: 100%;
     font-size:2em;
     text-align: right;
     padding-right:10px;
