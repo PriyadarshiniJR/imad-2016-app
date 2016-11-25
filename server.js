@@ -229,6 +229,13 @@ app.post('/submit-comment/:articleName', function (req, res) {
     }
 });
 
+app.get('/logout',function(req,res)
+{
+    delete req.session.auth;
+    res.send('<h1>Logged out</h1><br>click <a href="/">here </a> to return to homepage');
+   
+});
+
 //ProfilePage
 app.get('/profile', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
