@@ -13,6 +13,7 @@ body {
 
 .container{
     position: relative;
+    text-align: center;
 }
 
 /*Navbar*/
@@ -34,19 +35,6 @@ body {
   text-decoration: none;
 }
 
-.nav-above{
-    color:white;
-    font-family: 'Ceviche One', cursive;
-    background-color: black;
-    position: relative;
-    width: 100%;
-    font-size:2em;
-    text-align: right;
-    padding-right:10px;
-    padding-left:5px;
-    margin-right:20px;
-}
-
 /*******************************************************/
 
 #out{
@@ -64,13 +52,14 @@ body {
     background-color: white;
     border-color: #bdc7d8;
     position: absolute;
-    height: 30px;
+   /* height: 30px; */
     border-radius: 6px;
     font-size: 15px;
     padding-left: 5px;
+    width: 200px;
 }
 
-/*Already User*/
+/*Already User
 #user-old{
     top: 50px;
     right: 600px;
@@ -83,7 +72,7 @@ body {
     width: 200px;
 }
 
-/*New User*/
+/*New User
 #user-new{
     top: 300px;
     right: 200px;
@@ -115,7 +104,7 @@ body {
     font-size: 15px;
 }
 
-#signin{
+/*#signin{
     top: 50px;
     right: 200px;
 }
@@ -127,42 +116,5 @@ body {
 
 /*******************************************************/
 
-/*Scroll-Marquee*/
-.scroll{
-    background-color: #5a3c1f;
-    color: white;
-    font-size: 1.5em;
-    font-family: 'Allerta Stencil', sans-serif;
-}
 
-/*******************************************************/
-
-/*Profile*/
-.prof-box{
-    position: absolute;
-    padding: 2px;
-    top: 250px;
-    left: 200px;
-    background-color: green;
-    height: 220px;
-    width: 250px;
-    opacity: 0.8;
-    border: 5px;
-    border-color: black;
-}
-
-.prof{
-    text-align: center;
-    font-size: 1.2em;
-    opacity: 1;
-    font-weight: bold;
-}
-
-.prof-pic{
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    margin-left: 50px;
-    margin-top: 15px;
-}
 
