@@ -66,7 +66,8 @@ function loadLoginForm () {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  alert('User created successfully');
+                  alert('Registered successfully. Please login to continue.');
+                  window.location.href='http://priyadarshinijr.imad.hasura-app.io';
                   register.value = 'Registered!';
               } else {
                   alert('Could not register the user');
