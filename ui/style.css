@@ -17,17 +17,21 @@ body {
 
 /*Navbar*/
 
-.nav-below{
+.navbar-brand{
     position: relative;
     width: 100%;
     font-family: 'Ceviche One', cursive;
-    color: #ffbf03;
+    color: #557c3e;
     font-size: 6em;
     text-shadow: 3px 3px #427d19;
     text-align: left;
     vertical-align: top;
-    background-color: black;
     padding-left: 20px;
+    text-decoration: none;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
 
 .nav-above{
