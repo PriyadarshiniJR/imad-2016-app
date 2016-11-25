@@ -55,7 +55,7 @@ body {
 }
 
 /*Already User*/
-/*#user-old{
+#user-old{
     top: 50px;
     right: 600px;
     width: 200px;
@@ -66,7 +66,7 @@ body {
     right: 350px;
     width: 200px;
 }
-*/
+
 /*New User*/
 #user-new{
     top: 300px;
@@ -101,10 +101,10 @@ body {
     right: 200px;
 }
 
-/*#signin{
+#signin{
 	top: 50px;
     right: 200px;
-}*/
+}
 
 
 /*******************************************************/
