@@ -234,6 +234,10 @@ app.get('/profile', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
 });
 
+app.get('/ui/bg2.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bg2.jpg'));
+});
+
 app.get('/ui/bootstrap.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bootstrap.min.js'));
 });
