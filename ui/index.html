@@ -9,7 +9,6 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="/ui/bootstrap.css">
-	<link href="/ui/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/ui/style.css">
 	<script type="text/javascript" src="/ui/main.js"></script>
@@ -48,19 +47,15 @@
 
 			<div id="collapsable-nav" class="collapse navbar-collapse">
            		<ul id="nav-list" class="nav navbar-nav navbar-right">
-            		<li id="navHomeButton" class="visible-xs active">
-              			<a href="/">
-                		<span class="glyphicon glyphicon-home"></span> Home</a>
-            		</li>
             		
             		<li id="navProfileButton">
-              			<a href="http://priyadarshinijr.imad.hasura-app.io/profile">
+              			<a href="/profile">
                 		<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Profile</a>
             		</li>
             
             		<li>
               			<a href="http://priyadarshinijr.imad.hasura-app.io/get-articles">
-                		<span class="glyphicon glyphicon-paperclip"></span><br class="hidden-xs">Articles</a>
+                		<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span><br class="hidden-xs">Articles</a>
             		</li>
             
             		<li>
@@ -69,27 +64,23 @@
             		</li>
           		</ul><!-- #nav-list -->
         	</div><!-- .collapse .navbar-collapse -->
-
-		    <section>
-		        <div><input id="user-old" placeholder="Username"></div>
-		    	<div><input type="password" id="pass-old" placeholder="********"></div>
-		    	<button id="signin">Sign In</button>
-		    </section>
-
 		</div>
 	</nav>
 </header>
 
-<div class="scroll">
-	<marquee behavior="scroll" direction="left">Welcome to my Blog! New blogs every week.</marquee>
+<div id="main-content" class="container">
+	<div>
+	    <div><input id="user-old" placeholder="Username"></div>
+		<div><input type="password" id="pass-old" placeholder="********"></div>
+		<button id="signin">Sign In</button>
+	</div>
+	<div>
+		<div><input id="user-new" placeholder="Username"></div>
+		<div><input type="password" id="pass-new" placeholder="Password"></div>
+		<div><input id="email" placeholder="Email"></div>
+		<button id="signup">Sign Up</button>
+	</div>
 </div>
-<section>
-	<div id="out">Not yet a user? Sign Up!</div>
-	<div><input id="user-new" placeholder="Username"></div>
-	<div><input type="password" id="pass-new" placeholder="Password"></div>
-	<div><input id="email" placeholder="Email"></div>
-	<button id="signup">Sign Up</button>
-</section>
 
   <script src="/ui/jquery-3.1.1.min.js"></script>
   <script src="/ui/bootstrap.min.js"></script>
