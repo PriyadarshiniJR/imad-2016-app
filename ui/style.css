@@ -33,6 +33,7 @@ body {
 .nav-above{
     color:white;
     font-family: 'Ceviche One', cursive;
+    background-color: black;
     position: relative;
     width: 100%;
     font-size:2em;
