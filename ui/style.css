@@ -12,29 +12,29 @@ body {
 /*******************************************************/
 
 .container{
-	position: relative;
+    position: relative;
 }
 
 /*Navbar*/
 
 .nav{
-	position: relative;
-	width: 100%;
-	font-family: 'Ceviche One', cursive;
-	color: #ffbf03;
-	font-size: 6em;
-	text-shadow: 3px 3px #427d19;
-	text-align: left;
-	vertical-align: top;
-	background-color: black;
-	padding-left: 200px;
+    position: relative;
+    width: 100%;
+    font-family: 'Ceviche One', cursive;
+    color: #ffbf03;
+    font-size: 6em;
+    text-shadow: 3px 3px #427d19;
+    text-align: left;
+    vertical-align: top;
+    background-color: black;
+    padding-left: 200px;
 }
 
 /*******************************************************/
 
 #out{
-	position: absolute;
-	top: 250px;
+    position: absolute;
+    top: 250px;
     right: 200px;
     font-size: 1.5em;
     color: white;
@@ -42,12 +42,11 @@ body {
 }
 
 /*Username and Password*/
-
-#user-new,#pass-new,#email{
-	width: 300px;
-	background-color: white;
-	border-color: #bdc7d8;
-	position:absolute;
+#user-old,#pass-old,#user-new,#pass-new,#email{
+    width: 300px;
+    background-color: white;
+    border-color: #bdc7d8;
+    position: absolute;
     height: 30px;
     border-radius: 6px;
     font-size: 15px;
@@ -86,10 +85,10 @@ body {
 /*******************************************************/
 
 /*Signin and Signup*/
-#signup{
-	width: 100px;
-	background-color:#7CFC00;
-	border-color:#4da951;
+#signin,#signup{
+    width: 100px;
+    background-color:#7CFC00;
+    border-color:#4da951;
     position: absolute;
     height: 30px;
     border-radius: 6px;
@@ -97,12 +96,10 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 15px;
-	top: 450px;
-    right: 200px;
 }
 
 #signin{
-	top: 50px;
+    top: 50px;
     right: 200px;
 }
 
@@ -111,15 +108,14 @@ body {
     right: 200px;
 }
 
-
 /*******************************************************/
 
 /*Scroll-Marquee*/
 .scroll{
-	background-color: #5a3c1f;
-	color: white;
-	font-size: 1.5em;
-	font-family: 'Allerta Stencil', sans-serif;
+    background-color: #5a3c1f;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Allerta Stencil', sans-serif;
 }
 
 /*******************************************************/
