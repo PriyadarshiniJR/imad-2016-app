@@ -9,22 +9,66 @@
 	<title>
 		Profile
 	</title>
+	<link rel="stylesheet" href="/ui/bootstrap.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/ui/prof-style.css">
 </head>
 <body>
-	<div class="container">
-	    <div class="navbar">
-	        PROFILE
-	    </div>
-	    
-	    <div><img class="img" src="/ui/Priya.jpg"></div>
-	    <br>
-	    <div class="details">
-	        <p>Hello! I am Priyadarshini J R.</p>
-	        <p>I am a College Student</p>
-	        <p>Things I enjoy doing are reading and writing.</p>
-            <p>I also like designing websites.</p>
-	    </div>
-	</div>
+<header>
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="navbar-brand">
+            		PROFILE
+         		</div>
+				
+				<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+          		</button>
+			</div>
+
+			<div id="collapsable-nav" class="collapse navbar-collapse">
+           		<ul id="nav-list" class="nav navbar-nav navbar-right">
+            		
+            		<li id="navProfileButton">
+              			<a href="/">
+                		<span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a>
+            		</li>
+            
+            		<li>
+              			<a href="http://priyadarshinijr.imad.hasura-app.io/get-articles">
+                		<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span><br class="hidden-xs">Articles</a>
+            		</li>
+            
+            		<li>
+              			<a href="#">
+                		<span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Contact</a>
+            		</li>
+          		</ul><!-- #nav-list -->
+        	</div><!-- .collapse .navbar-collapse -->
+		</div>
+	</nav>
+</header>
+
+<div class="main">
+    <div><center><img class="img" src="/ui/Priya.jpg"></center></div>
+    <br>
+    <div>
+    	<div class="details">
+    		<h3>About Me</h3>
+    		<p>Hello! I am Priyadarshini J R. I am a student at SSN College of Engg.</p>
+    	</div>
+    	<hr>
+    	<div class="details">
+    		<h3>What I Enjoy Doing</h3>
+    		<p>I love reading books and coding.</p>
+    	</div>
+    </div>
+</div>
+  <script src="/ui/jquery-3.1.1.min.js"></script>
+  <script src="/ui/bootstrap.min.js"></script>
 </body>
 </html>
