@@ -238,8 +238,12 @@ app.get('/ui/bootstrap.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'boostrap.css'));
 });
 
-app.get('/ui/bootstrap-theme.min.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'bootstrap-theme.min.css'));
+app.get('/ui/bootstrap.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bootstrap.js'));
+});
+
+app.get('/ui/jquery-3.1.1.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'jquery-3.1.1.min.js'));
 });
 
 
