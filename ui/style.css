@@ -31,7 +31,7 @@ body {
 }
 
 /*******************************************************/
-/*
+
 #out{
 	position: absolute;
 	top: 250px;
@@ -40,9 +40,9 @@ body {
     color: white;
     font-family: Shrikhand;
 }
-*/
+
 /*Username and Password*/
-/*
+
 #user-old,#pass-old,#user-new,#pass-new,#email{
 	width: 300px;
 	background-color: white;
@@ -53,7 +53,7 @@ body {
     font-size: 15px;
     padding-left: 5px;
 }
-*/
+
 /*Already User*/
 /*#user-old{
     top: 50px;
@@ -65,8 +65,8 @@ body {
     top: 50px;
     right: 350px;
     width: 200px;
-}*/
-
+}
+*/
 /*New User*/
 #user-new{
     top: 300px;
@@ -85,7 +85,7 @@ body {
 
 /*******************************************************/
 
-/*Signin and Signup
+/*Signin and Signup*/
 #signin,#signup{
 	width: 100px;
 	background-color:#7CFC00;
@@ -99,16 +99,16 @@ body {
     font-size: 15px;
 }
 
-#signin{
+/*#signin{
 	top: 50px;
     right: 200px;
-}
+}*/
 
 #signup{
 	top: 450px;
     right: 200px;
 }
-*/
+
 /*******************************************************/
 
 /*Scroll-Marquee*/
