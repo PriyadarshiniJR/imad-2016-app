@@ -100,7 +100,7 @@ loadLogin();
 {
     
     var usertxt=document.getElementById('nav-list');
-    
+    console.log(usertxt);
    
      var request=new XMLHttpRequest();
     request.onreadystatechange=function()
@@ -155,7 +155,7 @@ loadLogin();
         }
         
     };
-request.open('GET','http://varunotelli.imad.hasura-app.io/check-login');
+request.open('GET','http://priyadarshinijr.imad.hasura-app.io/check-login');
 request.send(null);
   
    
