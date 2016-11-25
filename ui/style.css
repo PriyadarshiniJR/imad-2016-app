@@ -49,12 +49,12 @@ body {
     width: 200px;
 }
 
-#user-old{
+#pass-old{
     float:right;
 }
 
 #user-new,#pass-new,#email{
-    float:left;
+    float:right;
 }
 
 /*Signin and Signup*/
