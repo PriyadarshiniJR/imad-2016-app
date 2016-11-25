@@ -44,4 +44,9 @@ body {
 
 .navbar-brand{
     font-family: 'Shadows Into Light', cursive;
+    font-size: 6em;
+    text-shadow: 3px 3px #427d19;
+    text-align: left;
+    vertical-align: top;
+    padding-left: 20px;
 }
