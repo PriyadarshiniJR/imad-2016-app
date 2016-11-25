@@ -6,7 +6,7 @@ function loadCommentForm () {
     var commentFormHtml = `
         <h5>Submit a comment</h5>
         <center>
-        <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
+        <textarea id="content" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
         </center>
         <br/>
         <input type="submit" id="submit" value="Submit" />
@@ -26,7 +26,7 @@ function loadCommentForm () {
                 // Take some action
                 if (request.status === 200) {
                     // clear the form & reload all the comments
-                    document.getElementById('comment_text').value = '';
+                    document.getElementById('content').value = '';
                     loadComments();    
                 } else {
                     alert('Error! Could not submit comment');
