@@ -114,7 +114,7 @@ function loggedinUser()
                 var user=request.responseText;
                 //alert(user);
                 console.log(user);
-              usertxt.innerHTML='Logged in as ${user}';
+              usertxt.innerHTML='Logged in as '+user;
             }
              
             else
