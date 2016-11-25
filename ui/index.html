@@ -8,6 +8,7 @@
 	<link rel="manifest" href="/ui/favicon/manifest.json">
 	<meta name="theme-color" content="#ffffff">
 
+	<link rel="stylesheet" href="/ui/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="/ui/style.css">
 	<script type="text/javascript" src="/ui/main.js"></script>
 	
@@ -27,40 +28,66 @@
 <!--End of head-->
 
 <body>
-<div class="container">
+<header>
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="navbar-brand">
+            		<a href="/">WORDS</a>
+         		</div>
+				
+				<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+          		</button>
+			</div>
 
-	<!--Navbar-->
-	<div>
-	<div class="nav-above">
-	    <span><a href="/">Home</a></span>  
-	    <span><a href="http://priyadarshinijr.imad.hasura-app.io/profile">Profile</a></span>  
-	    <span><a href="/get-articles">Articles</a></span>  
-	    <span><a href="">Contact</a></span>  
-	</div>
-	<div class="nav-below">WORDS</div>
-    </div>
-    
-    <div class="scroll">
+			<div id="collapsable-nav" class="collapse navbar-collapse">
+           		<ul id="nav-list" class="nav navbar-nav navbar-right">
+            		<li id="navHomeButton" class="visible-xs active">
+              			<a href="/">
+                		<span class="glyphicon glyphicon-home"></span> Home</a>
+            		</li>
+            		
+            		<li id="navProfileButton">
+              			<a href="http://priyadarshinijr.imad.hasura-app.io/profile">
+                		<span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Profile</a>
+            		</li>
+            
+            		<li>
+              			<a href="http://priyadarshinijr.imad.hasura-app.io/get-articles">
+                		<span class="glyphicon glyphicon-paperclip"></span><br class="hidden-xs">Articles</a>
+            		</li>
+            
+            		<li>
+              			<a href="#">
+                		<span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Contact</a>
+            		</li>
+          		</ul><!-- #nav-list -->
+        	</div><!-- .collapse .navbar-collapse -->
+
+		    <section>
+		        <div><input id="user-old" placeholder="Username"></div>
+		    	<div><input type="password" id="pass-old" placeholder="********"></div>
+		    	<button id="signin">Sign In</button>
+		    </section>
+
+		</div>
+	</nav>
+</header>
+
+<div class="scroll">
 	<marquee behavior="scroll" direction="left">Welcome to my Blog! New blogs every week.</marquee>
-	</div>
-	
-    <section>
-        <div><input id="user-old" placeholder="Username"></div>
-    	<div><input type="password" id="pass-old" placeholder="********"></div>
-    	<button id="signin">Sign In</button>
-    </section>
-    
-
-    
-	<section>
-		<div id="out">Not yet a user? Sign Up!</div>
-		<div><input id="user-new" placeholder="Username"></div>
-		<div><input type="password" id="pass-new" placeholder="Password"></div>
-		<div><input id="email" placeholder="Email"></div>
-		<button id="signup">Sign Up</button>
-	</section>
-
 </div>
+<section>
+	<div id="out">Not yet a user? Sign Up!</div>
+	<div><input id="user-new" placeholder="Username"></div>
+	<div><input type="password" id="pass-new" placeholder="Password"></div>
+	<div><input id="email" placeholder="Email"></div>
+	<button id="signup">Sign Up</button>
+</section>
 
 </body>
 </html>
