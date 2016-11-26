@@ -41,7 +41,6 @@ body {
 #user-old,#pass-old,#user-new,#pass-new,#email{
     background-color: white;
     border-color: #bdc7d8;
-    position: relative;
    /* height: 30px; */
     border-radius: 6px;
     font-size: 15px;
@@ -49,12 +48,8 @@ body {
     width: 200px;
 }
 
-#pass-old{
-    float:right;
-}
-
-#user-new,#pass-new,#email{
-    float:right;
+#user-old{
+    margin-top:50px; 
 }
 
 /*Signin and Signup*/
@@ -62,10 +57,9 @@ body {
     width: 100px;
     background-color:#7CFC00;
     border-color:#4da951;
-    position: absolute;
     height: 30px;
     border-radius: 6px;
-
+    margin-bottom: 20px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 15px;
