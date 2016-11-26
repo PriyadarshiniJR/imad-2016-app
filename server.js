@@ -43,6 +43,47 @@ var htmlTemplate = `
           <script type="text/javascript" src="/ui/article.js"></script>
       </head> 
       <body>
+        <header>
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="navbar-brand">
+            		ARTICLES   
+         		</div>
+				
+				<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+          		</button>
+			</div>
+
+			<div id="collapsable-nav" class="collapse navbar-collapse">
+           		<ul id="nav-list" class="nav navbar-nav navbar-right">
+            		<li>
+              			<a href="/">
+                		<span class="glyphicon glyphicon-home" aria-hidden="true"></span><br class="hidden-xs">Home</a>
+            		</li>
+            		
+            		<li id="navProfileButton">
+              			<a href="/profile">
+                		<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Profile</a>
+            		</li>
+            
+            		<li>
+              			<a href="/profile/#contact">
+                		<span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Contact</a>
+            		</li>
+            		
+            		<li id="logged">
+            		    
+            		</li>
+          		</ul><!-- #nav-list -->
+        	</div><!-- .collapse .navbar-collapse -->
+		</div>
+	</nav>
+</header>
           <div class="container">
               <div>
                   <a href="/">Home</a>
