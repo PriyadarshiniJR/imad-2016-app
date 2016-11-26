@@ -38,43 +38,56 @@ body {
 /*******************************************************/
 
 /*Username and Password*/
+
+
 #user-old,#pass-old,#user-new,#pass-new,#email{
     background-color: white;
     border-color: #bdc7d8;
-   /* height: 30px; */
     border-radius: 6px;
     font-size: 15px;
     padding-left: 5px;
-    width: 200px;
-}
-
-#user-old{
-    margin-top:50px; 
+    width: 250px;
 }
 
 /*Signin and Signup*/
+#user-new,#pass-new,#email,#signup{
+    margin:15px;
+}
+
+#user-new{
+    margin-top:90px;
+}
+
+#user-old,#pass-old,#signin{
+    margin-top:50px; 
+    width: 200px;  
+}
+
 #signin,#signup{
     width: 100px;
     background-color:#7CFC00;
     border-color:#4da951;
-    height: 30px;
     border-radius: 6px;
-    margin-bottom: 20px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 15px;
 }
 
-#signin{
-    top: 50px;
-    right: 200px;
-}
 
-#signup{
-    top: 450px;
-    right: 200px;
-}
+@media (max-width: 767px){
+    #user-old,#pass-old,#user-new,#pass-new,#email,#signin,#signup{
+        margin-top:15px;
+    }
 
+    #user-old,#pass-old{
+        width: 250px;
+    }
+
+    #user-new{
+        margin-top:50px;
+    }
+
+}
 
 
 
