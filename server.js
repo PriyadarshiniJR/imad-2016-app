@@ -37,6 +37,8 @@ var htmlTemplate = `
             <link rel="icon" type="image/png" href="/ui/favicon.ico">
           <link rel="manifest" href="/ui/favicon/manifest.json">
           <meta name="theme-color" content="#ffffff">
+          	<link rel="stylesheet" href="/ui/bootstrap.css">
+	        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
           <link href="/ui/article.css" rel="stylesheet" />
@@ -107,6 +109,9 @@ var htmlTemplate = `
               <div id="comments">
               </div>
           </div>
+            <script src="/ui/jquery-3.1.1.min.js"></script>
+            <script src="/ui/bootstrap.min.js"></script>
+            <script src="/ui/main.js"></script>
       </body>
     </html>
     `;
