@@ -274,7 +274,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
 app.get('/logout',function(req,res)
 {  
     delete req.session.auth;
-    res.send('Logged Out');
+    //res.send('Logged Out');
 });
 
 //ProfilePage
