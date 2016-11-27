@@ -127,7 +127,7 @@ request.send(null);
 }
 
 
-loggedinUser();
+//loggedinUser();
 
 function logout()
 {
