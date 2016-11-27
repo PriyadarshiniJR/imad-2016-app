@@ -4,7 +4,9 @@ function loadLogin () {
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
-               // loadLoggedInUser(this.responseText);
+                //loadLoggedInUser(this.responseText);
+            } else {
+                loadLoginForm();
             }
         }
     };
@@ -14,10 +16,10 @@ function loadLogin () {
 }
 
 
-loadLogin();
-  // var submit = document.getElementById('signin');
-      //  console.log(submit);
-        function signin() {
+function loadLoginForm () {
+   var submit = document.getElementById('signin');
+        console.log(submit);
+        submit.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
         
@@ -40,7 +42,7 @@ loadLogin();
                   alert('Something went wrong on the server');
                   submit.value = 'Login';
               }
-              //loadLogin();
+              loadLogin();
           }  
           // Not done yet
         };
@@ -54,10 +56,10 @@ loadLogin();
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password})); 
         
-    }
+    };
 
-   // var register = document.getElementById('signup');
-    function signup() {
+    var register = document.getElementById('signup');
+    register.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
         
@@ -86,10 +88,11 @@ loadLogin();
         request.send(JSON.stringify({username: username, password: password}));  
         register.value = 'Signing Up...';
     
-    }
+    };
+}
 
 // The first thing to do is to check if the user is logged in!
-//loadLogin();
+loadLogin();
 
 // Now this is something that we could have directly done on the server-side using templating too!
 
@@ -127,26 +130,4 @@ request.send(null);
 }
 
 
-//loggedinUser();
-
-function logout()
-{
-     var request=new XMLHttpRequest();
-    request.onreadystatechange=function(){
-        if(request.readyState===XMLHttpRequest.DONE)
-        {
-            if(request.status===200)
-            {
-                alert("Logged out successfully!");
-                window.location.href="http://priyadarshinijr.imad.hasura-app.io/";
-            }
-            
-            else
-            alert('Could not logout');
-        }
-        
-    };
-request.open('GET','http://priyadarshinijr.imad.hasura-app.io/logout');
-request.send(null);
-}
-
+loggedinUser();
