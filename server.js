@@ -87,10 +87,6 @@ var htmlTemplate = `
 	</nav>
 </header>
           <div class="container">
-              <div>
-                  <a href="/">Home</a>
-              </div>
-              <br>
               <div class="wrap">
                   <div class="heading">
                       ${heading}
