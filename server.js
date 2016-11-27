@@ -42,7 +42,7 @@ var htmlTemplate = `
           <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
           <link href="/ui/article.css" rel="stylesheet" />
-          <script type="text/javascript" src="/ui/article.js"></script>
+
       </head> 
       <body>
         <header>
@@ -107,6 +107,7 @@ var htmlTemplate = `
           </div>
             <script src="/ui/jquery-3.1.1.min.js"></script>
             <script src="/ui/bootstrap.min.js"></script>
+            <script type="text/javascript" src="/ui/article.js"></script>
             <script src="/ui/main.js"></script>
       </body>
     </html>
