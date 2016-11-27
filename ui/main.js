@@ -99,8 +99,8 @@ loadLogin();
 function loggedinUser()
 {
     
-    var usertxt=document.getElementById('logged');
-    console.log(usertxt);
+   
+    //console.log(usertxt);
    
      var request=new XMLHttpRequest();
     request.onreadystatechange=function()
@@ -110,7 +110,7 @@ function loggedinUser()
             if(request.status===200)
             {
                 
-               
+                var usertxt=document.getElementById('logged');
                 var user=request.responseText;
                 //alert(user);
                 console.log(user);
