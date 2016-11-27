@@ -103,7 +103,7 @@ function loadComments () {
 loadComments();
 loadLogin();
 
-function loadContent () {
+/*function loadContent () {
         // Check if the user is already logged in
  
     var request = new XMLHttpRequest();
@@ -133,7 +133,7 @@ function loadContent () {
     
     request.open('GET', '/get-articles', true);
     request.send(null);
-}
+}*/
 
 // The first thing to do is to check if the user is logged in!
 
