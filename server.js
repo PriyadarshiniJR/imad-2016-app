@@ -109,7 +109,7 @@ var htmlTemplate = `
             <script src="/ui/bootstrap.min.js"></script>
             
             <script src="/ui/main.js"></script>
-            <script type="text/javascript" src="/ui/article.js"></script>
+            <script type="text/javascript" src="/ui/sinarticle.js"></script>
       </body>
     </html>
     `;
