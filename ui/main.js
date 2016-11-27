@@ -119,13 +119,6 @@ function loggedinUser()
               
               Logged in as `+user;
             }
-             
-            else
-            {
-                usertxt.innerHTML='';
-            }
-              
-            
         }
         
     };
