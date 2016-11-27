@@ -12,6 +12,7 @@ function loadCommentForm () {
         <input type="submit" id="submit" value="Submit" />
         <br/>
         `;
+        
     document.getElementById('comment_form').innerHTML = commentFormHtml;
     
     // Submit username/password to login
@@ -75,8 +76,8 @@ function loadComments () {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
-            var comments = document.getElementById('comments');
             if (request.status === 200) {
+                var comments = document.getElementById('comments');
                 var content = '';
                 var commentsData = JSON.parse(request.responseText);
                 for (var i=0; i< commentsData.length; i++) {
@@ -151,7 +152,7 @@ function loadContent () {
                 }
                 content += "</ul>";
                 articles.innerHTML = content;
-                console.log(content);
+                //console.log(content);
             } else {
                 articles.innerHTML('Oops! Could not load all articles!');
             }
