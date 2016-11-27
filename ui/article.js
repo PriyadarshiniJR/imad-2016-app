@@ -135,8 +135,8 @@ function loadContent () {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
-            var articles = document.getElementById('articles');
             if (request.status === 200) {
+                var articles = document.getElementById('articles');
                 var content = '<ul>';
                 var articleData = JSON.parse(request.responseText);
                 for (var i=0; i< articleData.length; i++) {
