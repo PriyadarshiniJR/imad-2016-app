@@ -1,6 +1,6 @@
 var currentArticleTitle = window.location.pathname.split('/')[2];
 
-loadContent();
+//loadContent();
 
 function loadCommentForm () {
     var commentFormHtml = `
