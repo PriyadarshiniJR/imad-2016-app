@@ -16,10 +16,9 @@ function loadLogin () {
 }
 
 
-function loadLoginForm () {
-   var submit = document.getElementById('signin');
-        console.log(submit);
-        submit.onclick = function () {
+  // var submit = document.getElementById('signin');
+      //  console.log(submit);
+        function signin() {
         // Create a request object
         var request = new XMLHttpRequest();
         
@@ -56,10 +55,10 @@ function loadLoginForm () {
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password})); 
         
-    };
+    }
 
-    var register = document.getElementById('signup');
-    register.onclick = function () {
+   // var register = document.getElementById('signup');
+    function signup() {
         // Create a request object
         var request = new XMLHttpRequest();
         
@@ -88,8 +87,7 @@ function loadLoginForm () {
         request.send(JSON.stringify({username: username, password: password}));  
         register.value = 'Signing Up...';
     
-    };
-}
+    }
 
 // The first thing to do is to check if the user is logged in!
 loadLogin();
