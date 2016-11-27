@@ -1,19 +1,3 @@
-function loadLogin () {
-    // Check if the user is already logged in
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if (request.readyState === XMLHttpRequest.DONE) {
-            if (request.status === 200) {
-                //loadLoggedInUser(this.responseText);
-            } 
-        }
-    };
-    
-    request.open('GET', '/check-login', true);
-    request.send(null);
-}
-
-
   // var submit = document.getElementById('signin');
       //  console.log(submit);
         function signin() {
@@ -39,7 +23,7 @@ function loadLogin () {
                   alert('Something went wrong on the server');
                   submit.value = 'Login';
               }
-              loadLogin();
+              //loadLogin();
           }  
           // Not done yet
         };
@@ -88,7 +72,7 @@ function loadLogin () {
     }
 
 // The first thing to do is to check if the user is logged in!
-loadLogin();
+//loadLogin();
 
 // Now this is something that we could have directly done on the server-side using templating too!
 
@@ -127,3 +111,25 @@ request.send(null);
 
 
 loggedinUser();
+
+function logout()
+{
+     var request=new XMLHttpRequest();
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            if(request.status===200)
+            {
+                alert("Logged out successfully!");
+                window.location.href="http://priyadarshinijr.imad.hasura-app.io/";
+            }
+            
+            else
+            alert('Could not logout');
+        }
+        
+    };
+request.open('GET','http://priyadarshinijr.imad.hasura-app.io/logout');
+request.send(null);
+}
+
