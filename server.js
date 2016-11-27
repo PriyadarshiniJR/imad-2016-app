@@ -107,7 +107,7 @@ var htmlTemplate = `
           </div>
             <script src="/ui/jquery-3.1.1.min.js"></script>
             <script src="/ui/bootstrap.min.js"></script>
-            <script type="text/javascript" src="/ui/sinarticle.js"></script>
+            <script type="text/javascript" src="/ui/article.js"></script>
             <script src="/ui/main.js"></script>
       </body>
     </html>
