@@ -272,9 +272,12 @@ app.post('/submit-comment/:articleName', function (req, res) {
 });
 
 app.get('/logout',function(req,res)
-{  
+{    if (req.session && req.session.auth && req.session.auth.userId){
+    
+
     delete req.session.auth;
-    //res.send('Logged Out');
+    res.send('<h1>Logged out</h1><br>click <a href="/">here </a> to return to homepage');
+}   
 });
 
 //ProfilePage
