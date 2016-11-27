@@ -44,7 +44,7 @@ var htmlTemplate = `
           <link href="/ui/article.css" rel="stylesheet" />
 
       </head> 
-      <body>
+      <body onload="loadContent();">
         <header>
 	<nav id="header-nav" class="navbar navbar-default">
 		<div class="container">
