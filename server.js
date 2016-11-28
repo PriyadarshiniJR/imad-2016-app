@@ -33,15 +33,16 @@ var htmlTemplate = `
           <title>
               ${title}
           </title>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="icon" type="image/png" href="/ui/favicon.ico">
-          <link rel="manifest" href="/ui/favicon/manifest.json">
-          <meta name="theme-color" content="#ffffff">
-          	<link rel="stylesheet" href="/ui/bootstrap.css">
-	        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-          <link href="/ui/article.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="/ui/favicon.ico">
+        <link rel="manifest" href="/ui/favicon/manifest.json">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="/ui/bootstrap.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy|Tangerine" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+        <link href="/ui/article.css" rel="stylesheet" />
 
       </head> 
       <body onload="loadLogin(); loadComments();">
@@ -50,7 +51,7 @@ var htmlTemplate = `
 		<div class="container">
 			<div class="navbar-header">
 				<div class="navbar-brand">
-            		ARTICLES   
+            		Articles
          		</div>
 				
 				<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
