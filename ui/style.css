@@ -29,6 +29,7 @@ body {
     vertical-align: top;
     padding-left: 20px;
     text-decoration: none;
+    margin-top:10px;
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
