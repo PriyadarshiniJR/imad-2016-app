@@ -30,7 +30,7 @@ body {
 }
 
 .date,h5{
-    font-family: 'Satisfy', cursive;
+    font-family: 'Tangerine', cursive;
     font-size:2em;
     opacity:1;
     color:#f8f9f2;
@@ -38,7 +38,7 @@ body {
 
 .content{
     padding:10px;
-    font-family: 'Tangerine', cursive;
+    font-family: 'Just Another Hand', cursive;
     font-size:2em;
     text-align:justify;
     opacity:1;
