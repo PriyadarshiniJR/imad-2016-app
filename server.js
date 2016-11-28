@@ -69,12 +69,12 @@ var htmlTemplate = `
             		</li>
             		
             		<li id="navProfileButton">
-              			<a href="/profile">
+              			<a href="/ui/profile.html">
                 		<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Profile</a>
             		</li>
             
             		<li>
-              			<a href="/profile/#contact">
+              			<a href="/ui/profile.html/#contact">
                 		<span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Contact</a>
             		</li>
             		
