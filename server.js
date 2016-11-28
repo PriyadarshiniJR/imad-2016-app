@@ -95,12 +95,12 @@ var htmlTemplate = `
                   <div class="date">
                       ${date.toDateString()}
                   </div>
-                  <div class="content">
+                  <div class="content2">
                     ${content}
                   </div>
               </div>
               <br/>
-              <h4>Comments</h4>
+
               <div id="comment_form">
               </div>
               <div id="comments">
