@@ -139,9 +139,9 @@ function loadContent () {
                 var content = '<ul>';
                 var articleData = JSON.parse(request.responseText);
                 for (var i=0; i< articleData.length; i++) {
-                    content += `<div>
+                    content += `<div class="wrap">
                     <a href="/articles/${articleData[i].title}">
-                    <div class="wrap">
+                    <div>
                     <h3>${articleData[i].heading}</h3>
                     <h5>${articleData[i].date.split('T')[0]}<h5>
                     <div class="content">${articleData[i].content}</div>
