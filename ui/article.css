@@ -45,6 +45,15 @@ body {
     color:#f8f9f2;
 }
 
+.content2{
+    padding:10px;
+    font-family: 'Just Another Hand', cursive;
+    font-size:2em;
+    text-align:justify;
+    opacity:1;
+    color:#f8f9f2;
+}
+
 .navbar-brand{
     font-family: 'Special Elite', cursive;
     font-size: 4em;
