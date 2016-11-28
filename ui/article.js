@@ -101,7 +101,7 @@ function loadComments () {
 }
 
 //loadComments();
-loadLogin();
+//loadLogin();
 
 function loadArticles () {
         // Check if the user is already logged in
