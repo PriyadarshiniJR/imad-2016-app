@@ -283,7 +283,7 @@ app.get('/logout',function(req,res)
 });
 
 //ProfilePage
-app.get('/profile', function (req, res) {
+app.get('/ui/profile', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
 });
 
