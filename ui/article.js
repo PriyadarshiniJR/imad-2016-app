@@ -139,7 +139,7 @@ function loadContent () {
                 var content = '<ul>';
                 var articleData = JSON.parse(request.responseText);
                 for (var i=0; i< articleData.length; i++) {
-                    content += `<li>
+                    content += `<div>
                     <a href="/articles/${articleData[i].title}">
                     <div class="wrap">
                     <h3>${articleData[i].heading}</h3>
@@ -147,7 +147,7 @@ function loadContent () {
                     <div class="content">${articleData[i].content}</div>
                     </div>
                     </a>
-                    </li>`;
+                    </div>`;
                 }
                 content += "</ul>";
                 var articles = document.getElementById('articles');
