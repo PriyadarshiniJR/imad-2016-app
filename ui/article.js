@@ -143,7 +143,7 @@ function loadContent () {
                     <a href="/articles/${articleData[i].title}">
                     <div>
                     <h3>${articleData[i].heading}</h3>
-                    <h5>${articleData[i].date.split('T')[0]}<h5>
+                    <h4>${articleData[i].date.split('T')[0]}<h4>
                     <div class="content">${articleData[i].content}</div>
                     </div>
                     </a>
