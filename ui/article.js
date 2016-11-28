@@ -52,7 +52,7 @@ function loadLogin () {
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
-                //loadCommentForm(request.responseText);
+                loadCommentForm(request.responseText);
             }
         }
     };
