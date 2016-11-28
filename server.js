@@ -44,7 +44,7 @@ var htmlTemplate = `
           <link href="/ui/article.css" rel="stylesheet" />
 
       </head> 
-      <body>
+      <body onload="loadLogin(); loadComments();">
         <header>
 	<nav id="header-nav" class="navbar navbar-default">
 		<div class="container">
@@ -109,7 +109,7 @@ var htmlTemplate = `
             <script src="/ui/bootstrap.min.js"></script>
             
             <script src="/ui/main.js"></script>
-            <script type="text/javascript" src="/ui/sinarticle.js"></script>
+            <script type="text/javascript" src="/ui/article.js"></script>
       </body>
     </html>
     `;
