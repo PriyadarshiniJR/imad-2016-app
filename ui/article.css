@@ -73,7 +73,7 @@ a:hover,a:focus {
 }
 
 #articles a:hover{
-    color:blue;
+    text-shadow:white;
 }
 
 #submit{
