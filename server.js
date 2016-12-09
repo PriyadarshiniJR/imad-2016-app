@@ -143,19 +143,28 @@ app.get('/hash/:input', function(req, res) {
 });
 
 app.post('/create-user', function (req, res) {
-   var username = req.body.username;
-   var password = req.body.password;
-   var salt = crypto.randomBytes(128).toString('hex');
-   var dbString = hash(password, salt);
-   pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbString], function (err, result) {
-      if (err) {
-          res.status(500).send(err.toString());
-      } else {
-          res.send('User successfully created: ' + username);
-      }
-   });
+  var username = req.body.username;
+  var password = req.body.password;
+  if(!username.trim() || !password.trim() || username.length>32 || password.length>32){
+      res.status(400).send('Cannot leave username or password blank.Please Enter Username/Password:(Upto 32 chars)')
+  } 
+  else if(!/^[a-zA-Z0-9_.@]+$/.test(username)){  //If username contains other than a-z,A-Z,0-9,@._ then send error.
+      res.status(500).send("Username can't contain special characters except _.@");
+  }
+  else{
+        var salt = crypto.randomBytes(128).toString('hex');
+        var dbString = hash(password, salt);
+        pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbString],         function (err, result) {
+           if(err) {
+              res.status(500).send(err.toString());
+           } else {
+              res.send('User successfully created: ' + username);
+           }
+        });
+    }
 });
 
+/*
 app.post('/signin', function (req, res) {
    var username = req.body.username;
    var password = req.body.password;
@@ -189,7 +198,48 @@ app.post('/signin', function (req, res) {
       }
    });
 });
+*/
 
+app.post('/signin',function(req,res){
+ var username=req.body.username;
+ var password=req.body.password;
+ if(!username.trim() || !password.trim() || username.length>32 || password.length>32){
+      res.status(400).send('Cannot leave username or password blank.Please Enter Username/Password:(Upto 32 chars)');
+ }
+ else if(!/^[a-zA-Z0-9_ .@]+$/.test(username)){  //If username contains other than a-z,A-Z,0-9,@._BLANKSPACE then send error.
+    res.status(500).send("Username can't contain special characters except _.@");
+}
+else{
+     pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          if (result.rows.length === 0) {
+              res.status(403).send('Username/Password is invalid');
+          } else {
+              // Match the password
+              var dbString = result.rows[0].password;
+              console.log(dbString);
+              var salt = dbString.split('$')[2];
+              var hashedPassword = hash(password, salt); 
+              // Creating a hash based on the password submitted and the original salt
+              if (hashedPassword === dbString) {
+                // Set the session
+                req.session.auth = {userId: result.rows[0].id};
+                // set cookie with a session id
+                // internally, on the server side, it maps the session id to an object
+                // { auth: {userId }}
+                
+                res.send('Credentials correct!');
+                
+              } else {
+                res.status(403).send('Username/Password is invalid');
+              }
+          }
+      }
+   });
+   }
+});
 
 app.get('/check-login', function (req, res) {
    if (req.session && req.session.auth && req.session.auth.userId) {
