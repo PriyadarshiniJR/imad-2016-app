@@ -101,7 +101,7 @@ var htmlTemplate = `
               </div>
               <br/>
 
-              <div id="comment_form">
+              <div id="comment_form" class="col-xs-5 col-sm-5 col-md-10">
               </div>
               <div id="comments">
               </div>
