@@ -114,7 +114,7 @@ function loggedinUser()
                 var user=request.responseText;
                 //alert(user);
                 console.log(user);
-              usertxt.innerHTML=`<a href="/logout">
+              usertxt.innerHTML=`<a href="/" onclick="return logout();">
                 		<span class="glyphicon glyphicon-log-out"></span><br class="hidden-xs">Log Out</a>
               
               Logged in as `+user;
@@ -131,3 +131,26 @@ request.send(null);
 
 
 loggedinUser();
+
+function logout(){
+    var request=new XMLHttpRequest();
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            if(request.status===200)
+            {
+                alert("Logged out successfully!");
+                window.location.href="http://priyadarshinijr.imad.hasura-app.io/";
+            }
+            
+            else
+            {
+                //console.log(request.status);
+            alert('Could not logout');
+            }
+        }
+        
+    };
+request.open('GET','http://priyadarshinijr.imad.hasura-app.io/logout');
+request.send(null);
+}
