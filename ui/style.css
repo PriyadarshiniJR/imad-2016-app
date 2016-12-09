@@ -36,6 +36,10 @@ body {
   text-decoration: none;
 }
 
+#nav-list a:hover{
+    color: blue;
+}
+
 /*******************************************************/
 
 /*Username and Password*/
