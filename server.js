@@ -209,8 +209,7 @@ app.post('/signin',function(req,res){
  }
  else if(!/^[a-zA-Z0-9_ .@]+$/.test(username)){  //If username contains other than a-z,A-Z,0-9,@._BLANKSPACE then send error.
     res.status(500).send("Username can't contain special characters except _.@");
-}
-else{
+}else{
      pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
