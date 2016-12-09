@@ -39,9 +39,7 @@ var htmlTemplate = `
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="/ui/bootstrap.css">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Satisfy|Tangerine" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Sacramento|Satisfy|Special+Elite|Tangerine" rel="stylesheet">
         <link href="/ui/article.css" rel="stylesheet" />
 
       </head> 
