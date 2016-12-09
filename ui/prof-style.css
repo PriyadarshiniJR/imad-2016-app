@@ -29,6 +29,10 @@ body {
     vertical-align: top;
 }
 
+#nav-list a:hover{
+    color: blue;
+}
+
 .center{
     text-align:center;
 }
