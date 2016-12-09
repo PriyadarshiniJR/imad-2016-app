@@ -73,6 +73,11 @@ var htmlTemplate = `
               			<a href="/ui/profile.html">
                 		<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Profile</a>
             		</li>
+            		
+            		<li>
+              			<a href="/ui/articles.html">
+                		<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span><br class="hidden-xs">Articles</a>
+            		</li>
             
             		<li>
               			<a href="/ui/profile.html/#contact">
