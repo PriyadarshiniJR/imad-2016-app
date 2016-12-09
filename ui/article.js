@@ -4,7 +4,7 @@ var currentArticleTitle = window.location.pathname.split('/')[2];
 
 function loadCommentForm () {
     var commentFormHtml = `
-        <textarea id="content" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
+        <textarea id="content" class="col-xs-10" rows="5"  placeholder="Enter your comment here..."></textarea>
         <br/>
         <button type="submit" id="submit" value="Submit">Submit</button>
         <br/>
