@@ -36,9 +36,12 @@ function loadLoginForm () {
                   alert('Invalid username/password');
                   window.location.href='http://priyadarshinijr.imad.hasura-app.io';
               } else if (request.status === 500) {
-                  alert('Something went wrong on the server');
+                  alert("Username can't contain special characters except _.@");
                   submit.value = 'Login';
-              } else {
+              }else if(request.status === 400){ 
+                  alert('Cannot leave username or password blank.Please Enter Username/Password:(Upto 32 chars)');
+                  submit.value = 'Login';
+              }else {
                   alert('Something went wrong on the server');
                   submit.value = 'Login';
               }
@@ -71,7 +74,13 @@ function loadLoginForm () {
                   alert('Registered successfully. Please login to continue.');
                   window.location.href='http://priyadarshinijr.imad.hasura-app.io';
                   register.value = 'Registered!';
-              } else {
+              }else if(request.status === 400){ 
+                  alert('Cannot leave username or password blank.Please Enter Username/Password:(Upto 32 chars)');
+                  register.value = 'Register';
+              }else if(request.status === 500){
+                  alert("Username can't contain special characters except _.@");
+                  register.value = 'Register';
+              }else {
                   alert('Could not register the user');
                   register.value = 'Register';
               }
