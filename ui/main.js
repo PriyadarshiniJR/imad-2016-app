@@ -146,12 +146,7 @@ function logout(){
                 alert("Logged out successfully!");
                 window.location.href="http://priyadarshinijr.imad.hasura-app.io/";
             }
-            
-            else
-            {
-                //console.log(request.status);
-            alert('Could not logout');
-            }
+
         }
         
     };
