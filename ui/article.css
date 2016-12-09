@@ -77,3 +77,8 @@ a:hover,a:focus {
     font-weight: bold;
     font-size: 15px;
 }
+
+#comments{
+    background-color:white;
+    margin:1px;
+}
