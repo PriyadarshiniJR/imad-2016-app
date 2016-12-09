@@ -76,9 +76,15 @@ a:hover,a:focus {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 15px;
+    margin:10px;
 }
 
 #comments{
-    background-color:white;
-    margin:1px;
+    padding:10px;
+    font-family: 'Just Another Hand', cursive;
+    font-size:2em;
+    text-align:justify;
+    opacity:1;
+    color:#f8f9f2;
+    margin:10px;
 }
