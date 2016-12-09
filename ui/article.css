@@ -79,6 +79,10 @@ a:hover,a:focus {
     margin:10px;
 }
 
+#comment_form{
+    margin:10px;
+}
+
 #comments{
     padding:10px;
     font-family: 'Just Another Hand', cursive;
