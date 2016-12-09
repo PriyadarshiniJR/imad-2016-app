@@ -67,3 +67,13 @@ body {
 a:hover,a:focus {
   text-decoration: none;
 }
+
+#submit{
+    width: 100px;
+    background-color:#7CFC00;
+    border-color:#4da951;
+    border-radius: 6px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
