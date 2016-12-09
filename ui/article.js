@@ -9,7 +9,9 @@ function loadCommentForm () {
         <textarea id="content" class="col-xs-5 col-sm-5 col-md-10" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
         </div>
         <br/>
+        <div>
         <input type="submit" id="submit" value="Submit" />
+        </div>
         <br/>
         `;
         
