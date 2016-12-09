@@ -30,7 +30,7 @@ function loadLoginForm () {
               if (request.status === 200) {
                   submit.value = 'Success!';
                   alert('Login successful');
-                  window.location.href='http://priyadarshinijr.imad.hasura-app.io/ui/profile.html';
+                  window.location.href='http://priyadarshinijr.imad.hasura-app.io/ui/articles.html';
               } else if (request.status === 403) {
                   submit.value = 'Invalid credentials. Try again?';
                   alert('Invalid username/password');
