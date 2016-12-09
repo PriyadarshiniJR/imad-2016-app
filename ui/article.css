@@ -72,6 +72,10 @@ a:hover,a:focus {
     color: blue;
 }
 
+#articles a:hover{
+    color:blue;
+}
+
 #submit{
     width: 100px;
     background-color:#7CFC00;
